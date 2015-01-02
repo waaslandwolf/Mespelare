@@ -1,0 +1,2057 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!-- Version 0.0.1C -->
+<!-- 2005-08-01  Ake Hedman, eurosource -->
+<vscp>
+<module>
+	<name>Antwerp I/O module</name>
+ 	<model>DIN rail module</model>
+	<version>0.0.1</version>
+	<changed>2012-9-25</changed>
+   <description lang="en">This VSCP module has 28 outputs, 3 opto isolated inputs, 4 0-10V outputs</description>
+  	<infourl>http://www.vscp.org/wiki/</infourl>
+  	<buffersize>8</buffersize>
+   <manufacturer>	
+   	<name>KurtSidekick</name>
+      <address>
+      	<street>-</street>
+         <city>Hasselt</city>
+         <postcode>3500</postcode>
+         <country>Belgium</country>
+     	</address>
+      <telephone>									
+                <number></number>
+                <description lang="en" ></description>
+   	</telephone>
+   	<email>
+		<address>kurt.sidekick@yahoo.com</address>
+		<description>Support email</description>
+	</email>	
+        <web>
+		<address></address>
+		<description></description>
+	</web>					
+	</manufacturer>  
+	
+	
+	<boot>
+		<algorithm>1</algorithm>
+		<blocksize>8</blocksize>
+		<blockcount>4096</blockcount>
+	</boot>
+	
+	
+	<registers>        
+
+        <reg page="0" offset="0" >
+            <name lang="en">Zone</name>
+            <description lang="en">Zone this module belongs to</description>
+            <access>rw</access>
+	</reg>
+
+        <reg page="0" offset="1" >
+            <name lang="en">Subzone</name>
+            <description lang="en">Subzone this module belongs to</description>
+            <access>rw</access>
+	</reg>
+		
+	<reg page="0" offset="2" >
+            <name lang="en">output 1 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="3" >
+            <name lang="en">output 2 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="4" >
+            <name lang="en">output 3 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="5" >
+            <name lang="en">output 4 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="6" >
+            <name lang="en">output 5 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="7" >
+            <name lang="en">output 6 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="8" >
+            <name lang="en">output 7 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="9" >
+            <name lang="en">output 8 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="10" >
+            <name lang="en">output 9 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="11" >
+            <name lang="en">output 10 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="12" >
+            <name lang="en">output 11 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="13" >
+            <name lang="en">output 12 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="14" >
+            <name lang="en">output 13 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="15" >
+            <name lang="en">output 14 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="16" >
+            <name lang="en">output 15 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="17" >
+            <name lang="en">output 16 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="18" >
+            <name lang="en">output 17 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="19" >
+            <name lang="en">output 18 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="20" >
+            <name lang="en">output 19 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="21" >
+            <name lang="en">output 20 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="22" >
+            <name lang="en">output 21 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="23" >
+            <name lang="en">output 22 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="24" >
+            <name lang="en">output 23 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="25" >
+            <name lang="en">output 24 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="26" >
+            <name lang="en">output 25 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="27" >
+            <name lang="en">output 26 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="28" >
+            <name lang="en">output 27 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+
+        <reg page="0" offset="29" >
+            <name lang="en">output 28 status register</name>
+            <description lang="en">
+                Writing a value to the output control register will activate/deactivate the output output.\n
+                0 - The output is not active.\n
+		1 - The output is active.\n
+            </description>
+            <access>rw</access>
+      	</reg>
+		
+        <reg page="0" offset="30" >
+                <name lang="en">Control byte for output 1</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>
+	
+        <reg page="0" offset="31" >
+                <name lang="en">Control byte for output 2</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="32" >
+                <name lang="en">Control byte for output 3</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="33" >
+                <name lang="en">Control byte for output 4</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="34" >
+                <name lang="en">Control byte for output 5</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="35" >
+                <name lang="en">Control byte for output 6</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="36" >
+                <name lang="en">Control byte for output 7</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="37" >
+                <name lang="en">Control byte for output 8</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>		
+	
+        <reg page="0" offset="38" >
+                <name lang="en">Control byte for output 9</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="39" >
+                <name lang="en">Control byte for output 10</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="40" >
+                <name lang="en">Control byte for output 11</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="41" >
+                <name lang="en">Control byte for output 12</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="42" >
+                <name lang="en">Control byte for output 13</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="43" >
+                <name lang="en">Control byte for output 14</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="44" >
+                <name lang="en">Control byte for output 15</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>		
+	
+        <reg page="0" offset="45" >
+                <name lang="en">Control byte for output 16</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="46" >
+                <name lang="en">Control byte for output 17</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="47" >
+                <name lang="en">Control byte for output 18</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="48" >
+                <name lang="en">Control byte for output 19</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="49" >
+                <name lang="en">Control byte for output 20</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="50" >
+                <name lang="en">Control byte for output 21</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="51" >
+                <name lang="en">Control byte for output 22</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>		
+	
+        <reg page="0" offset="52" >
+                <name lang="en">Control byte for output 23</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="53" >
+                <name lang="en">Control byte for output 24</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="54" >
+                <name lang="en">Control byte for output 25</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="55" >
+                <name lang="en">Control byte for output 26</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="56" >
+                <name lang="en">Control byte for output 27</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>	
+        
+        <reg page="0" offset="57" >
+                <name lang="en">Control byte for output 28</name>
+                <description lang="en">
+                    The output control bits enable/disable output associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - If set: Alarm sent when protection timer triggers.\n
+                Bit 2 - Protection timer enable.\n
+                Bit 3 - Send On event when relay goes to active state.\n
+                Bit 4 - Send Off event when relay goes to inactive state.\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the relay is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>
+		
+        <reg page="0" offset="58" >
+                <name lang="en">Subzone for output 1</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="59" >
+                <name lang="en">Subzone for output 2</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="60" >
+                <name lang="en">Subzone for output 3</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+	</reg>
+
+        <reg page="0" offset="61" >
+                <name lang="en">Subzone for output 4</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="62" >
+                <name lang="en">Subzone for output 5</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="63" >
+                <name lang="en">Subzone for output 6</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="64" >
+                <name lang="en">Subzone for output 7</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="65" >
+                <name lang="en">Subzone for output 8</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="66" >
+                <name lang="en">Subzone for output 9</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="67" >
+                <name lang="en">Subzone for output 10</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="68" >
+                <name lang="en">Subzone for output 11</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="69" >
+                <name lang="en">Subzone for output 12</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="70" >
+                <name lang="en">Subzone for output 13</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="71" >
+                <name lang="en">Subzone for output 14</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="72" >
+                <name lang="en">Subzone for output 15</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="73" >
+                <name lang="en">Subzone for output 16</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="74" >
+                <name lang="en">Subzone for output 17</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="75" >
+                <name lang="en">Subzone for output 18</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="76" >
+                <name lang="en">Subzone for output 19</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="77" >
+                <name lang="en">Subzone for output 20</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="78" >
+                <name lang="en">Subzone for output 21</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="79" >
+                <name lang="en">Subzone for output 22</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="80" >
+                <name lang="en">Subzone for output 23</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="81" >
+                <name lang="en">Subzone for output 24</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="82" >
+                <name lang="en">Subzone for output 25</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="83" >
+                <name lang="en">Subzone for output 26</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="84" >
+                <name lang="en">Subzone for output 27</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="0" offset="85" >
+                <name lang="en">Subzone for output 28</name>
+                <description lang="en">
+                This is a subzone related to this specific output. If zero the the module Zone/subzone will be used else the modules zone and the outputs sub zone will be used.
+                </description>
+                <access>rw</access>
+        </reg>
+        
+	<reg page="0" offset="86" >
+		<name lang="en">Protection time for out1</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="87" >
+		<name lang="en">Protection time for out2</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="88" >
+		<name lang="en">Protection time for out3</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="89" >
+		<name lang="en">Protection time for out4</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="90" >
+		<name lang="en">Protection time for out5</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="91" >
+		<name lang="en">Protection time for out6</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="92" >
+		<name lang="en">Protection time for out7</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="93" >
+		<name lang="en">Protection time for out8</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="94" >
+		<name lang="en">Protection time for out9</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="95" >
+		<name lang="en">Protection time for out10</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="96" >
+		<name lang="en">Protection time for out11</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="97" >
+		<name lang="en">Protection time for out12</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="98" >
+		<name lang="en">Protection time for out13</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="99" >
+		<name lang="en">Protection time for out14</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+       <reg page="0" offset="100" >
+		<name lang="en">Protection time for out15</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="101" >
+		<name lang="en">Protection time for out16</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="102" >
+		<name lang="en">Protection time for out17</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="103" >
+		<name lang="en">Protection time for out18</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="104" >
+		<name lang="en">Protection time for out19</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="105" >
+		<name lang="en">Protection time for out20</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="106" >
+		<name lang="en">Protection time for out21</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="107" >
+		<name lang="en">Protection time for out22</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="108" >
+		<name lang="en">Protection time for out23</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="109" >
+		<name lang="en">Protection time for out24</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="110" >
+		<name lang="en">Protection time for out25</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="111" >
+		<name lang="en">Protection time for out26</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="112" >
+		<name lang="en">Protection time for out27</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+
+        <reg page="0" offset="113" >
+		<name lang="en">Protection time for out28</name>
+		<description lang="en">Protection time in multiples of 64s
+		</description>
+		<access>rw</access>
+	</reg>
+		
+        <reg page="1" offset="0" >
+                <name lang="en">PWM1 value</name>
+                <description lang="en">
+                The actual value of the PWM output.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="1" >
+                <name lang="en">PWM2 value</name>
+                <description lang="en">
+                The actual value of the PWM output.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="2" >
+                <name lang="en">PWM3 value</name>
+                <description lang="en">
+                The actual value of the PWM output.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="3" >
+                <name lang="en">PWM4 value</name>
+                <description lang="en">
+                The actual value of the PWM output.
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="4" >
+                <name lang="en">Control byte for PWM1</name>
+                <description lang="en">
+                    The control bits enable/disable PWM associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - Reserved\n
+                Bit 2 - Protection timer enable for associated output.\n
+                Bit 3 - Send On event when PWM goes to active state (above treshold).\n
+                Bit 4 - Send Off event when PWM goes to inactive state (below treshold).\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the PWM is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>
+	
+        <reg page="1" offset="5" >
+                <name lang="en">Control byte for PWM2</name>
+                <description lang="en">
+                    The control bits enable/disable PWM associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - Reserved\n
+                Bit 2 - Protection timer enable for associated output.\n
+                Bit 3 - Send On event when PWM goes to active state (above treshold).\n
+                Bit 4 - Send Off event when PWM goes to inactive state (below treshold).\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the PWM is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="6" >
+                <name lang="en">Control byte for PWM3</name>
+                <description lang="en">
+                    The control bits enable/disable PWM associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - Reserved\n
+                Bit 2 - Protection timer enable for associated output.\n
+                Bit 3 - Send On event when PWM goes to active state (above treshold).\n
+                Bit 4 - Send Off event when PWM goes to inactive state (below treshold).\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the PWM is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="7" >
+                <name lang="en">Control byte for PWM4</name>
+                <description lang="en">
+                    The control bits enable/disable PWM associated functionality:\n
+                Bit 0 - Reserved.\n
+                Bit 1 - Reserved\n
+                Bit 2 - Protection timer enable for associated output.\n
+                Bit 3 - Send On event when PWM goes to active state (above treshold).\n
+                Bit 4 - Send Off event when PWM goes to inactive state (below treshold).\n
+                Bit 5 - Reserved.\n
+                Bit 6 - Reserved.\n
+                Bit 7 - If set to one the PWM is enabled.\n
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="8" >
+                <name lang="en">Subzone PWM1</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="9" >
+                <name lang="en">Subzone PWM2</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="10" >
+                <name lang="en">Subzone PWM3</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="11" >
+                <name lang="en">Subzone PWM4</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="12" >
+                <name lang="en">With PWM1 associated Output</name>
+                <description lang="en">Output associated with PWM will be activated if above PWM treshold value\nOutput will be deactivate when beloz treshold
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="13" >
+                <name lang="en">With PWM2 associated Output</name>
+                <description lang="en">Output associated with PWM will be activated if above PWM treshold value\nOutput will be deactivate when beloz treshold
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="14" >
+                <name lang="en">With PWM3 associated Output</name>
+                <description lang="en">Output associated with PWM will be activated if above PWM treshold value\nOutput will be deactivate when beloz treshold
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="15" >
+                <name lang="en">With PWM4 associated Output</name>
+                <description lang="en">Output associated with PWM will be activated if above PWM treshold value\nOutput will be deactivate when beloz treshold
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="1" offset="16" >
+                <name lang="en">Treshhold PWM1</name>
+                <description lang="en">Treshold value for associated outputs (if any) with PWM1
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="17" >
+                <name lang="en">Treshhold PWM2</name>
+                <description lang="en">Treshold value for associated outputs (if any) with PWM1
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="18" >
+                <name lang="en">Treshhold PWM3</name>
+                <description lang="en">Treshold value for associated outputs (if any) with PWM1
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="19" >
+                <name lang="en">Treshhold PWM4</name>
+                <description lang="en">Treshold value for associated outputs (if any) with PWM1
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="22" >
+                <name lang="en">Control byte for INP1</name>
+                <description lang="en">
+                    The control bits enable/disable input associated functionality:\n
+                Bit 0 - Send event at raising edge\n
+                Bit 1 - Send repeated events when input active\n
+                Bit 2 - Send event at falling edge\n
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="23" >
+                <name lang="en">Control byte for INP2</name>
+                <description lang="en">
+                    The control bits enable/disable input associated functionality:\n
+                Bit 0 - Send event at raising edge\n
+                Bit 1 - Send repeated events when input active\n
+                Bit 2 - Send event at falling edge\n
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="24" >
+                <name lang="en">Control byte for INP3</name>
+                <description lang="en">
+                    The control bits enable/disable input associated functionality:\n
+                Bit 0 - Send event at raising edge\n
+                Bit 1 - Send repeated events when input active\n
+                Bit 2 - Send event at falling edge\n
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="30" >
+                <name lang="en">Subzone for INP1</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="31" >
+                <name lang="en">Subzone for INP2</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+        
+        <reg page="1" offset="32" >
+                <name lang="en">Subzone for INP3</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+        <!-- DM Row 1 -->
+        <reg page="2" offset="0" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="1" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="2" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="3" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="4" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="5" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="6" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="7" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+	<!-- DM Row 2 -->
+        <reg page="2" offset="8" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="9" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="10" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="11" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="12" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="13" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="14" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="15" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <!-- DM Row 3 -->
+        <reg page="2" offset="16" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="17" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="18" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="19" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="20" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="21" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="22" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="23" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <!-- DM Row 4 -->
+        <reg page="2" offset="24" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="25" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="26" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="27" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="28" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="29" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="30" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="31" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <!-- DM Row 5 -->
+        <reg page="2" offset="32" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="33" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="34" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="35" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="36" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="37" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="38" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="39" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <!-- DM Row 6 -->
+        <reg page="2" offset="40" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="41" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="42" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="43" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="44" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="45" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="46" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="47" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <!-- DM Row 7 -->
+        <reg page="2" offset="48" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="49" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="50" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="51" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="52" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="53" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="54" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="55" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <!-- DM Row 8 -->
+        <reg page="2" offset="56" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="57" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="58" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="59" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="60" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="61" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="62" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="63" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <!-- DM Row 9 -->
+        <reg page="2" offset="64" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="65" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="66" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="67" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="68" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="69" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="70" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="71" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <!-- DM Row 10 -->
+        <reg page="2" offset="72" >
+			<name lang="en">Decision matrix reg: Oaddr </name>
+			<description lang="en">
+			</description>
+			<access>rw</access>
+	</reg>
+
+        <reg page="2" offset="73" >
+                <name lang="en">Decision matrix reg: flags </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="74" >
+                <name lang="en">Decision matrix reg: Class mask (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="75" >
+                <name lang="en">Decision matrix reg: Class filter (low eight bits) </name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="76" >
+                <name lang="en">Decision matrix reg: Type mask</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="77" >
+                <name lang="en">Decision matrix reg: Type filter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="78" >
+                <name lang="en">Decision matrix reg: Action</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+        <reg page="2" offset="79" >
+                <name lang="en">Decision matrix reg: Action parameter</name>
+                <description lang="en">
+                </description>
+                <access>rw</access>
+        </reg>
+
+
+
+	</registers>
+
+
+	<abstractions>
+
+        </abstractions>
+		
+	
+	<!-- Decison matrix -->
+	<dmatrix>
+  
+		<level>1</level>					
+		<start page="2" offset="0"/>
+		<rowcnt>10</rowcnt>
+					
+    	<action code="0x01">				
+      	<name lang="en">Activate output(s)</name>
+        	<description lang="en">
+			Activate output(s) with matching zone
+        	</description>
+        </action>
+		
+    	<action code="0x02">				
+      	<name lang="en">Deactivate output(s)</name>
+        	<description lang="en">
+			Deactivate output(s) with matching zone
+        	</description>
+        </action>
+		
+    	<action code="0x04">
+      	<name lang="en">Toggle output(s)</name>
+        	<description lang="en">
+			Toggle output(s) with matching zone.
+        	</description>
+        </action>	
+		
+    	<action code="0x08">
+      	<name lang="en">Increase matching PWM output(s) with argument</name>
+        	<description lang="en">
+
+        	</description>
+        </action>				
+		 
+	</dmatrix>
+	
+
+</module>	
+</vscp>	

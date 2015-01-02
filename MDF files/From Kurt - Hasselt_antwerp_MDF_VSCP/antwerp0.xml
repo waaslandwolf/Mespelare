@@ -1,0 +1,483 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!-- Version 0.0.1C -->
+<!-- 2005-08-01  Ake Hedman, eurosource -->
+<vscp>
+<module>
+	<name>Antwerp I/O module</name>
+ 	<model>DIN rail module</model>
+	<version>0.0.1</version>
+	<changed>2012-9-25</changed>
+   <description lang="en">This VSCP module has 28 outputs, 3 opto isolated inputs, 4 0-10V outputs</description>
+  	<infourl>http://www.vscp.org/wiki/</infourl>
+  	<buffersize>8</buffersize>
+   <manufacturer>	
+   	<name>KurtSidekick</name>
+      <address>
+      	<street>-</street>
+         <city>Hasselt</city>
+         <postcode>3500</postcode>
+         <country>Belgium</country>
+     	</address>
+      <telephone>									
+                <number></number>
+                <description lang="en" ></description>
+   	</telephone>
+   	<email>
+		<address>kurt.sidekick@yahoo.com</address>
+		<description>Support email</description>
+	</email>	
+        <web>
+		<address></address>
+		<description></description>
+	</web>					
+	</manufacturer>  
+	
+	
+	<boot>
+		<algorithm>1</algorithm>
+		<blocksize>8</blocksize>
+		<blockcount>4096</blockcount>
+	</boot>
+	
+	
+	<registers>        
+
+        <reg page="0" offset="0" >
+			<name lang="en">Zone</name>
+			<description lang="en">Zone this module belongs to</description>
+			<access>rw</access>
+	</reg>
+
+	<reg page="0" offset="1" >
+			<name lang="en">Subzone</name>
+			<description lang="en">Subzone this module belongs to</description>
+			<access>rw</access>
+	</reg>
+		
+	<reg page="0" offset="2" >
+			<name lang="en"></name>
+                        <description lang="en"></description>
+                        <access>rw</access>
+      	
+	</reg>
+        <reg page="0" offset="2" >
+			<name lang="en"></name>
+                        <description lang="en"></description>
+                        <access>rw</access>
+
+	</reg>
+        <reg page="0" offset="2" >
+			<name lang="en"></name>
+                        <description lang="en"></description>
+                        <access>rw</access>
+
+	</reg>
+        <reg page="0" offset="2" >
+			<name lang="en"></name>
+                        <description lang="en"></description>
+                        <access>rw</access>
+
+	</reg>
+        <reg page="0" offset="2" >
+			<name lang="en"></name>
+                        <description lang="en"></description>
+                        <access>rw</access>
+
+	</reg>
+	
+
+
+	</registers>
+
+
+	<abstractions>
+
+		<abstraction type="short"
+							page = "0" offset = "0" >
+   		<name lang="en">Relay pulse time register for relay 1</name>
+      	<description lang="en">
+      	This is the pulse time for the each relay expressed in seconds. This can be used to have a relay turn on and off with a certain preset interval. The min pulse time is 1 second and the max time is 65535 seconds which is about 18 hours. Set to zero (default) for no pulse time i.e. the relay will be steady on/off.\n
+			To start a pulse sequence first write the pulse time to this register and then write 2 to the relay status register to start the output. The pulse train is terminated by writing on or off (1 or 0) to the relay status register. \n
+      	</description>
+      	<access>rw</access>
+   	</abstraction>
+
+		<abstraction type="short"
+							page = "1" offset = "0" >
+   		<name lang="en">Relay pulse time register for relay 2</name>
+      	<description lang="en">
+      	This is the pulse time for the each relay expressed in seconds. This can be used to have a relay turn on and off with a certain preset interval. The min pulse time is 1 second and the max time is 65535 seconds which is about 18 hours. Set to zero (default) for no pulse time i.e. the relay will be steady on/off.\n
+			To start a pulse sequence first write the pulse time to this register and then write 2 to the relay status register to start the output. The pulse train is terminated by writing on or off (1 or 0) to the relay status register. \n
+      	</description>
+      	<access>rw</access>
+   	</abstraction>
+
+ 		<abstraction type="short"
+							page = "2" offset = "0" >
+   		<name lang="en">Relay pulse time register for relay 3</name>
+      	<description lang="en">
+      	This is the pulse time for the each relay expressed in seconds. This can be used to have a relay turn on and off with a certain preset interval. The min pulse time is 1 second and the max time is 65535 seconds which is about 18 hours. Set to zero (default) for no pulse time i.e. the relay will be steady on/off.\n
+			To start a pulse sequence first write the pulse time to this register and then write 2 to the relay status register to start the output. The pulse train is terminated by writing on or off (1 or 0) to the relay status register. \n
+      	</description>
+      	<access>rw</access>
+   	</abstraction>
+        </abstractions>
+		
+	
+	<!-- Decison matrix -->
+	<dmatrix>
+  
+		<level>1</level>					
+		<start page="2" offset="0"/>
+		<rowcnt>2</rowcnt>
+					
+    	<action code="0x01">				
+      	<name lang="en">Activate output(s)</name>
+        	<description lang="en">
+			Activate output(s) given by argument. The argument is a bit array where bit 0 is output 1 and so on.\n
+         Byte 1 is Zone and byte 2 is zone page and must be equal to register content to trigger action.\n   	
+        	</description>
+        	<param>							
+      		<name lang="en">Bitarry for output</name>
+      	   <description lang="en">
+				A bitarray where the first bit represents output one and so on.
+      	   </description>
+      	   
+      	   <bit pos="0" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>
+      		<bit pos="1" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>  
+      		<bit pos="2" default="false">
+      			<name lang="en">output 2</name>
+      		   <description lang="en">Set to one to select output 2</description>
+      		</bit>  
+      		<bit pos="3" default="false">
+      			<name lang="en">output 3</name>
+      		   <description lang="en">Set to one to select output 3</description>
+      		</bit>  
+      		<bit pos="4" default="false">
+      			<name lang="en">output 4</name>
+      		   <description lang="en">Set to one to select output 4</description>
+      		</bit>  
+      		<bit pos="5" default="false">
+      			<name lang="en">output 5</name>
+      		   <description lang="en">Set to one to select output 5</description>
+      		</bit>  
+      		<bit pos="6" default="false">
+      			<name lang="en">output 6</name>
+      		   <description lang="en">Set to one to select output 6</description>
+      		</bit>  
+      		<bit pos="7" default="false">
+      			<name lang="en">output 7</name>
+      		   <description lang="en">Set to one to select output 7</description>
+      		</bit>        		      		      		      		      		
+			</param>
+		</action>
+		
+    	<action code="0x02">				
+      	<name lang="en">Deactivate output(s)</name>
+        	<description lang="en">
+			Deactivate output(s) given by argument. The argument is a bit array where bit 0 is output 1 and so on.\n
+         Byte 1 is Zone and byte 2 is zone page and must be equal to register content to trigger action.\n   	
+        	</description>
+        	<param>							
+      		<name lang="en">Bitarry for output</name>
+      	   <description lang="en">
+				A bitarray where the first bit represents output one and so on.
+      	   </description>
+      	   
+      	   <bit pos="0" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>
+      		<bit pos="1" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>  
+      		<bit pos="2" default="false">
+      			<name lang="en">output 2</name>
+      		   <description lang="en">Set to one to select output 2</description>
+      		</bit>  
+      		<bit pos="3" default="false">
+      			<name lang="en">output 3</name>
+      		   <description lang="en">Set to one to select output 3</description>
+      		</bit>  
+      		<bit pos="4" default="false">
+      			<name lang="en">output 4</name>
+      		   <description lang="en">Set to one to select output 4</description>
+      		</bit>  
+      		<bit pos="5" default="false">
+      			<name lang="en">output 5</name>
+      		   <description lang="en">Set to one to select output 5</description>
+      		</bit>  
+      		<bit pos="6" default="false">
+      			<name lang="en">output 6</name>
+      		   <description lang="en">Set to one to select output 6</description>
+      		</bit>  
+      		<bit pos="7" default="false">
+      			<name lang="en">output 7</name>
+      		   <description lang="en">Set to one to select output 7</description>
+      		</bit>        		      		      		      		      		
+			</param>
+		</action>
+		
+    	<action code="0x03">				
+      	<name lang="en">Pulse output(s)</name>
+        	<description lang="en">
+			Pulse output(s) given by argument. The argument is a bit array where bit 0 is output 1 and so on.\n
+         Byte 1 is Zone and byte 2 is zone page and must be equal to register content to trigger action.\n   	
+        	</description>
+        	<param>							
+      		<name lang="en">Bitarry for output</name>
+      	   <description lang="en">
+				A bitarray where the first bit represents output one and so on.
+      	   </description>
+      	   
+      	   <bit pos="0" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>
+      		<bit pos="1" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>  
+      		<bit pos="2" default="false">
+      			<name lang="en">output 2</name>
+      		   <description lang="en">Set to one to select output 2</description>
+      		</bit>  
+      		<bit pos="3" default="false">
+      			<name lang="en">output 3</name>
+      		   <description lang="en">Set to one to select output 3</description>
+      		</bit>  
+      		<bit pos="4" default="false">
+      			<name lang="en">output 4</name>
+      		   <description lang="en">Set to one to select output 4</description>
+      		</bit>  
+      		<bit pos="5" default="false">
+      			<name lang="en">output 5</name>
+      		   <description lang="en">Set to one to select output 5</description>
+      		</bit>  
+      		<bit pos="6" default="false">
+      			<name lang="en">output 6</name>
+      		   <description lang="en">Set to one to select output 6</description>
+      		</bit>  
+      		<bit pos="7" default="false">
+      			<name lang="en">output 7</name>
+      		   <description lang="en">Set to one to select output 7</description>
+      		</bit>        		      		      		      		      		
+			</param>
+		</action>	
+		
+    	<action code="0x0A">				
+      	<name lang="en">Send status for output(s)</name>
+        	<description lang="en">
+			Send status for output(s) given by argument. The argument is a bit array where bit 0 is output 1 and so on.\n
+         Byte 1 is Zone and byte 2 is zone page and must be equal to register content to trigger action.\n   	
+        	</description>
+        	<param>							
+      		<name lang="en">Bitarry for output</name>
+      	   <description lang="en">
+				A bitarray where the first bit represents output one and so on.
+      	   </description>
+      	   
+      	   <bit pos="0" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>
+      		<bit pos="1" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>  
+      		<bit pos="2" default="false">
+      			<name lang="en">output 2</name>
+      		   <description lang="en">Set to one to select output 2</description>
+      		</bit>  
+      		<bit pos="3" default="false">
+      			<name lang="en">output 3</name>
+      		   <description lang="en">Set to one to select output 3</description>
+      		</bit>  
+      		<bit pos="4" default="false">
+      			<name lang="en">output 4</name>
+      		   <description lang="en">Set to one to select output 4</description>
+      		</bit>  
+      		<bit pos="5" default="false">
+      			<name lang="en">output 5</name>
+      		   <description lang="en">Set to one to select output 5</description>
+      		</bit>  
+      		<bit pos="6" default="false">
+      			<name lang="en">output 6</name>
+      		   <description lang="en">Set to one to select output 6</description>
+      		</bit>  
+      		<bit pos="7" default="false">
+      			<name lang="en">output 7</name>
+      		   <description lang="en">Set to one to select output 7</description>
+      		</bit>        		      		      		      		      		
+			</param>
+		</action>	
+		
+    	<action code="0x10">				
+      	<name lang="en">Disable output(s)</name>
+        	<description lang="en">
+			Disable output(s) given by argument. The argument is a bit array where bit 0 is output 1 and so on.\n
+         Byte 1 is Zone and byte 2 is zone page and must be equal to register content to trigger action.\n   	
+        	</description>
+        	<param>							
+      		<name lang="en">Bitarry for output</name>
+      	   <description lang="en">
+				A bitarray where the first bit represents output one and so on.
+      	   </description>
+      	   
+      	   <bit pos="0" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>
+      		<bit pos="1" default="false">
+      			<name lang="en">output 1</name>
+      		   <description lang="en">Set to one to select output 1</description>
+      		</bit>  
+      		<bit pos="2" default="false">
+      			<name lang="en">output 2</name>
+      		   <description lang="en">Set to one to select output 2</description>
+      		</bit>  
+      		<bit pos="3" default="false">
+      			<name lang="en">output 3</name>
+      		   <description lang="en">Set to one to select output 3</description>
+      		</bit>  
+      		<bit pos="4" default="false">
+      			<name lang="en">output 4</name>
+      		   <description lang="en">Set to one to select output 4</description>
+      		</bit>  
+      		<bit pos="5" default="false">
+      			<name lang="en">output 5</name>
+      		   <description lang="en">Set to one to select output 5</description>
+      		</bit>  
+      		<bit pos="6" default="false">
+      			<name lang="en">output 6</name>
+      		   <description lang="en">Set to one to select output 6</description>
+      		</bit>  
+      		<bit pos="7" default="false">
+      			<name lang="en">output 7</name>
+      		   <description lang="en">Set to one to select output 7</description>
+      		</bit>        		      		      		      		      		
+			</param>
+		</action>				
+		 
+	</dmatrix>
+	
+	
+	
+	<events>
+	
+		<event class="0x014" type="0x03" >
+			<name lang="en">On Event</name> 					
+			<description lang="en">
+			A output has been set in its ON position.
+			</description> 	
+			<priority>4</priority>
+			<data offset="0" >						
+   			<name lang="en">Index</name>
+      		<description lang="en">
+      		Set to n indicating output n+1
+      		</description>      	
+			</data>
+			<data offset="1" >						
+   			<name lang="en">Zone</name>
+      		<description lang="en">
+      		 Set to the zone for the module.
+      		</description>      	
+			</data>
+			<data offset="2" >
+   			<name lang="en">Subzone</name>
+      		<description lang="en">
+      		 Set to the subzone for the output or if it is zero to the subzone for the module..
+      		</description>      	
+			</data>
+		</event>
+		
+		<event class="0x014" type="0x04" >
+			<name lang="en">Off Event</name> 					
+			<description lang="en">
+			A output has been set in its OFF position.
+			</description> 	
+			<priority>4</priority>
+			<data offset="0" >						
+   			<name lang="en">Index</name>
+      		<description lang="en">
+      		Set to n indicating output n+1
+      		</description>      	
+			</data>
+			<data offset="1" >						
+   			<name lang="en">Zone</name>
+      		<description lang="en">
+      		 Set to the zone for the module.
+      		</description>      	
+			</data>
+			<data offset="2" >
+   			<name lang="en">Subzone</name>
+      		<description lang="en">
+      		 Set to the subzone for the output or if it is zero to the subzone for the module..
+      		</description>      	
+			</data>
+		</event>		
+		
+		<event class="0x014" type="0x18" >
+			<name lang="en">Started Event</name> 					
+			<description lang="en">
+			A output has been set in its ON position.
+			</description> 	
+			<priority>4</priority>
+			<data offset="0" >						
+   			<name lang="en">Index</name>
+      		<description lang="en">
+      		Set to n indicating output n+1
+      		</description>      	
+			</data>
+			<data offset="1" >						
+   			<name lang="en">Zone</name>
+      		<description lang="en">
+      		 Set to the zone for the module.
+      		</description>      	
+			</data>
+			<data offset="2" >
+   			<name lang="en">Subzone</name>
+      		<description lang="en">
+      		 Set to the subzone for the output or if it is zero to the subzone for the module..
+      		</description>      	
+			</data>
+		</event>
+		
+		<event class="0x014" type="0x19" >
+			<name lang="en">Stopped Event</name> 					
+			<description lang="en">
+			A output has been set in its ON position.
+			</description> 	
+			<priority>4</priority>
+			<data offset="0" >						
+   			<name lang="en">Index</name>
+      		<description lang="en">
+      		Set to n indicating output n+1
+      		</description>      	
+			</data>
+			<data offset="1" >						
+   			<name lang="en">Zone</name>
+      		<description lang="en">
+      		 Set to the zone for the module.
+      		</description>      	
+			</data>
+			<data offset="2" >
+   			<name lang="en">Subzone</name>
+      		<description lang="en">
+      		 Set to the subzone for the output or if it is zero to the subzone for the module..
+      		</description>      	
+			</data>
+		</event>		
+		
+		
+	</events>
+	
+</module>	
+</vscp>	

@@ -1,0 +1,1350 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<registerset>
+<register id='0'>
+<value>0x10</value>
+<description>Zone
+Zone this module belongs to</description>
+</register>
+<register id='1'>
+<value>0x80</value>
+<description>Subzone
+Subzone this module belongs to</description>
+</register>
+<register id='2'>
+<value>0x00</value>
+<description>Relay 1 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='3'>
+<value>0x00</value>
+<description>Relay 2 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='4'>
+<value>0x00</value>
+<description>Relay 3 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='5'>
+<value>0x00</value>
+<description>Relay 4 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='6'>
+<value>0x00</value>
+<description>Relay 5 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='7'>
+<value>0x00</value>
+<description>Relay 6 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='8'>
+<value>0x00</value>
+<description>Relay 7 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='9'>
+<value>0x00</value>
+<description>Relay 8 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='10'>
+<value>0x00</value>
+<description>Relay 9 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='11'>
+<value>0x00</value>
+<description>Relay 10 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='12'>
+<value>0x00</value>
+<description>Relay 11 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='13'>
+<value>0x00</value>
+<description>Relay 12 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='14'>
+<value>0x00</value>
+<description>Relay 13 status register
+Writing a value to the relay control register will activate/deactivate the relay
+output.
+ 0 - The relay is inactivated.
+1 - The relay is activated.
+2 - The relay is pulse activated/deactivated (opposite form rest state).
+Reading a value from the relay control register is read as a one if the relay is
+activated and a 0 if the relay is deactivated.
+When the pulse activation/deactivating is used the actual relay state is read. That
+is, if a 2 is written to relay 1 a one will be read while the relay is activated,
+after which a zero will be read.
+ </description>
+</register>
+<register id='15'>
+<value>0x05</value>
+<description>Dimmer PWM Value
+Writing will not have an effect, read shows PWM value.
+ </description>
+</register>
+<register id='16'>
+<value>0x98</value>
+<description>Relay 1 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='17'>
+<value>0x98</value>
+<description>Relay 2 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='18'>
+<value>0x98</value>
+<description>Relay 3 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='19'>
+<value>0x98</value>
+<description>Relay 4 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='20'>
+<value>0x80</value>
+<description>Relay 5 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='21'>
+<value>0x98</value>
+<description>Relay 6 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='22'>
+<value>0x98</value>
+<description>Relay 7 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='23'>
+<value>0x98</value>
+<description>Relay 8 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='24'>
+<value>0x98</value>
+<description>Relay 9 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='25'>
+<value>0x98</value>
+<description>Relay 10 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='26'>
+<value>0x98</value>
+<description>Relay 11 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='27'>
+<value>0x98</value>
+<description>Relay 12 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='28'>
+<value>0x98</value>
+<description>Relay 13 control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 1 - If set: Alarm sent when protection timer triggers.
+Bit 2 - Protection timer enable.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+Bit 7 - If set to one the relay is enabled.
+</description>
+</register>
+<register id='29'>
+<value>0x18</value>
+<description>PWM control register
+The relay control bits enable/disable intelligent relay functionality:
+Bit 0 - Reserved.
+Bit 3 - Send On event when relay goes to active state.
+Bit 4 - Send Off event when relay goes to inactive state.
+Bit 5 - Send Started event when relay goes to active state.
+Bit 6 - Send Stopped event when relay goes to active state.
+</description>
+</register>
+<register id='30'>
+<value>0x00</value>
+<description>Relay protection time register for relay 1
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='31'>
+<value>0x00</value>
+<description>Relay protection time register for relay 2
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='32'>
+<value>0x00</value>
+<description>Relay protection time register for relay 3
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='33'>
+<value>0x00</value>
+<description>Relay protection time register for relay 4
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='34'>
+<value>0x00</value>
+<description>Relay protection time register for relay 5
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='35'>
+<value>0x00</value>
+<description>Relay protection time register for relay 6
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='36'>
+<value>0x00</value>
+<description>Relay protection time register for relay 7
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='37'>
+<value>0x00</value>
+<description>Relay protection time register for relay 8
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='38'>
+<value>0x00</value>
+<description>Relay protection time register for relay 9
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='39'>
+<value>0x00</value>
+<description>Relay protection time register for relay 10
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='40'>
+<value>0x00</value>
+<description>Relay protection time register for relay 11
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='41'>
+<value>0x00</value>
+<description>Relay protection time register for relay 12
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='42'>
+<value>0x00</value>
+<description>Relay protection time register for relay 13
+This is the relay protection time. A relay will be inactivated if not written to
+before this time has elapsed.
+Set to zero to disable (default). The max time is 65535 seconds which is about 18
+hours.
+The registers can be as an example be used as a security feature to ensure that
+an output is deactivated after a preset time even if the controlling device failed
+to deactivate the relay. </description>
+</register>
+<register id='43'>
+<value>0x20</value>
+<description>Dimmer OFF Treshold Value
+Value which below will turn off PWM.
+ </description>
+</register>
+<register id='44'>
+<value>0x05</value>
+<description>Subzone for relay 1
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='45'>
+<value>0x06</value>
+<description>Subzone for relay 2
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='46'>
+<value>0x07</value>
+<description>Subzone for relay 3
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='47'>
+<value>0x08</value>
+<description>Subzone for relay 4
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='48'>
+<value>0x05</value>
+<description>Subzone for relay 5
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='49'>
+<value>0x06</value>
+<description>Subzone for relay 6
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='50'>
+<value>0x07</value>
+<description>Subzone for relay 7
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='51'>
+<value>0x08</value>
+<description>Subzone for relay 8
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='52'>
+<value>0x09</value>
+<description>Subzone for relay 9
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='53'>
+<value>0x0A</value>
+<description>Subzone for relay 10
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='54'>
+<value>0x0B</value>
+<description>Subzone for relay 11
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='55'>
+<value>0x0C</value>
+<description>Subzone for relay 12
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='56'>
+<value>0x0D</value>
+<description>Subzone for relay 13
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='57'>
+<value>0x0E</value>
+<description>Subzone for PWM
+This is a subzone related to this specific relay. If zero the the module Zone/subzone
+will be used else the modules zone and the relays sub zone will be used. </description>
+</register>
+<register id='58'>
+<value>0x00</value>
+<description>Relay associated with PWM
+This is the relay number that will follow the dimmer status. If dimmer is above treshold
+the relay will be on. If it is below the relay will be off.
+If the value is zero no relay will follow the status. </description>
+</register>
+<register id='59'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='60'>
+<value>0x18</value>
+<description>Decision matrix row 1: flags 
+Row 1 of decision matrix. Flags. Set selection behaviour.
+The enable bit can be used to disable a decion matrix row while it is edited.
+The zone and use subzone bits can be activated to have a check on the zone/subzone
+information of an event. That is the zone/subzone of the machine must match the one
+of the event to trigger the DM row.
+</description>
+</register>
+<register id='61'>
+<value>0xFF</value>
+<description>Decision matrix row 1: Class mask (low eight bits) 
+The lowest eight bits of the class mask that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class mask is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='62'>
+<value>0x14</value>
+<description>Decision matrix row 1: Class filter (low eight bits) 
+The lowest eight bits of the class filter that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class filter is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='63'>
+<value>0xFF</value>
+<description>Decision matrix row 1: Type mask
+Type mask that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='64'>
+<value>0x01</value>
+<description>Decision matrix row 1: Type filter
+Type filter that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='65'>
+<value>0x05</value>
+<description></description>
+</register>
+<register id='66'>
+<value>0x05</value>
+<description>Decision matrix row 1: Action parameter
+A numeric action parameter can be set and its meaning is application specific.</description>
+</register>
+<register id='67'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='68'>
+<value>0x98</value>
+<description>Decision matrix row 2: flags 
+Row 1 of decision matrix. Flags. Set selection behaviour.
+The enable bit can be used to disable a decion matrix row while it is edited.
+The zone and use subzone bits can be activated to have a check on the zone/subzone
+information of an event. That is the zone/subzone of the machine must match the one
+of the event to trigger the DM row.
+</description>
+</register>
+<register id='69'>
+<value>0xFF</value>
+<description>Decision matrix row 2: Class mask (low eight bits) 
+The lowest eight bits of the class mask that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class mask is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='70'>
+<value>0x14</value>
+<description>Decision matrix row 2: Class filter (low eight bits) 
+The lowest eight bits of the class filter that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class filter is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='71'>
+<value>0xFF</value>
+<description>Decision matrix row 2: Type mask
+Type mask that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='72'>
+<value>0x01</value>
+<description>Decision matrix row 2: Type filter
+Type filter that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='73'>
+<value>0x04</value>
+<description></description>
+</register>
+<register id='74'>
+<value>0xFF</value>
+<description>Decision matrix row 2: Action parameter
+A numeric action parameter can be set and its meaning is application specific.</description>
+</register>
+<register id='75'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='76'>
+<value>0x9A</value>
+<description>Decision matrix row 3: flags 
+Row 1 of decision matrix. Flags. Set selection behaviour.
+The enable bit can be used to disable a decion matrix row while it is edited.
+The zone and use subzone bits can be activated to have a check on the zone/subzone
+information of an event. That is the zone/subzone of the machine must match the one
+of the event to trigger the DM row.
+</description>
+</register>
+<register id='77'>
+<value>0xFF</value>
+<description>Decision matrix row 3: Class mask (low eight bits) 
+The lowest eight bits of the class mask that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class mask is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='78'>
+<value>0x1E</value>
+<description>Decision matrix row 3: Class filter (low eight bits) 
+The lowest eight bits of the class filter that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class filter is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='79'>
+<value>0xFF</value>
+<description>Decision matrix row 3: Type mask
+Type mask that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='80'>
+<value>0x05</value>
+<description>Decision matrix row 3: Type filter
+Type filter that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='81'>
+<value>0x01</value>
+<description></description>
+</register>
+<register id='82'>
+<value>0xFF</value>
+<description>Decision matrix row 3: Action parameter
+A numeric action parameter can be set and its meaning is application specific.</description>
+</register>
+<register id='83'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='84'>
+<value>0x9A</value>
+<description>Decision matrix row 4: flags 
+Row 1 of decision matrix. Flags. Set selection behaviour.
+The enable bit can be used to disable a decion matrix row while it is edited.
+The zone and use subzone bits can be activated to have a check on the zone/subzone
+information of an event. That is the zone/subzone of the machine must match the one
+of the event to trigger the DM row.
+</description>
+</register>
+<register id='85'>
+<value>0xFF</value>
+<description>Decision matrix row 4: Class mask (low eight bits) 
+The lowest eight bits of the class mask that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class mask is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='86'>
+<value>0x1E</value>
+<description>Decision matrix row 4: Class filter (low eight bits) 
+The lowest eight bits of the class filter that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class filter is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='87'>
+<value>0xFF</value>
+<description>Decision matrix row 4: Type mask
+Type mask that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='88'>
+<value>0x06</value>
+<description>Decision matrix row 4: Type filter
+Type filter that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='89'>
+<value>0x02</value>
+<description></description>
+</register>
+<register id='90'>
+<value>0xFF</value>
+<description>Decision matrix row 4: Action parameter
+A numeric action parameter can be set and its meaning is application specific.</description>
+</register>
+<register id='91'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='92'>
+<value>0x00</value>
+<description>Decision matrix row 5: flags 
+Row 1 of decision matrix. Flags. Set selection behaviour.
+The enable bit can be used to disable a decion matrix row while it is edited.
+The zone and use subzone bits can be activated to have a check on the zone/subzone
+information of an event. That is the zone/subzone of the machine must match the one
+of the event to trigger the DM row.
+</description>
+</register>
+<register id='93'>
+<value>0x00</value>
+<description>Decision matrix row 5: Class mask (low eight bits) 
+The lowest eight bits of the class mask that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class mask is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='94'>
+<value>0x00</value>
+<description>Decision matrix row 5: Class filter (low eight bits) 
+The lowest eight bits of the class filter that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class filter is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='95'>
+<value>0x00</value>
+<description>Decision matrix row 5: Type mask
+Type mask that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='96'>
+<value>0x00</value>
+<description>Decision matrix row 5: Type filter
+Type filter that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='97'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='98'>
+<value>0x00</value>
+<description>Decision matrix row 5: Action parameter
+A numeric action parameter can be set and its meaning is application specific.</description>
+</register>
+<register id='99'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='100'>
+<value>0x00</value>
+<description>Decision matrix row 6: flags 
+Row 1 of decision matrix. Flags. Set selection behaviour.
+The enable bit can be used to disable a decion matrix row while it is edited.
+The zone and use subzone bits can be activated to have a check on the zone/subzone
+information of an event. That is the zone/subzone of the machine must match the one
+of the event to trigger the DM row.
+</description>
+</register>
+<register id='101'>
+<value>0x00</value>
+<description>Decision matrix row 6: Class mask (low eight bits) 
+The lowest eight bits of the class mask that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class mask is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='102'>
+<value>0x00</value>
+<description>Decision matrix row 6: Class filter (low eight bits) 
+The lowest eight bits of the class filter that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class filter is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='103'>
+<value>0x00</value>
+<description>Decision matrix row 6: Type mask
+Type mask that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='104'>
+<value>0x00</value>
+<description>Decision matrix row 6: Type filter
+Type filter that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='105'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='106'>
+<value>0x00</value>
+<description>Decision matrix row 6: Action parameter
+A numeric action parameter can be set and its meaning is application specific.</description>
+</register>
+<register id='107'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='108'>
+<value>0x00</value>
+<description>Decision matrix row 7: flags 
+Row 1 of decision matrix. Flags. Set selection behaviour.
+The enable bit can be used to disable a decion matrix row while it is edited.
+The zone and use subzone bits can be activated to have a check on the zone/subzone
+information of an event. That is the zone/subzone of the machine must match the one
+of the event to trigger the DM row.
+</description>
+</register>
+<register id='109'>
+<value>0x00</value>
+<description>Decision matrix row 7: Class mask (low eight bits) 
+The lowest eight bits of the class mask that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class mask is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='110'>
+<value>0x00</value>
+<description>Decision matrix row 7: Class filter (low eight bits) 
+The lowest eight bits of the class filter that defines the events that should trigger
+the action of thsi decision matrix row.
+Bit 8 of the class filter is stored in bit 1 of the flag byte. </description>
+</register>
+<register id='111'>
+<value>0x00</value>
+<description>Decision matrix row 7: Type mask
+Type mask that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='112'>
+<value>0x00</value>
+<description>Decision matrix row 7: Type filter
+Type filter that defines the events that should trigger the action of this decision
+matrix row.</description>
+</register>
+<register id='113'>
+<value>0x00</value>
+<description></description>
+</register>
+<register id='114'>
+<value>0x00</value>
+<description>Decision matrix row 7: Action parameter
+A numeric action parameter can be set and its meaning is application specific.</description>
+</register>
+<register id='115'>
+<value>0x00</value>
+<description>Alarm Status Register</description>
+</register>
+<register id='116'>
+<value>0x01</value>
+<description>VSCP Major version number</description>
+</register>
+<register id='117'>
+<value>0x05</value>
+<description>VSCP Minor version number</description>
+</register>
+<register id='118'>
+<value>0x00</value>
+<description>Node Control Flags test</description>
+</register>
+<register id='119'>
+<value>0xFF</value>
+<description>User ID 0</description>
+</register>
+<register id='120'>
+<value>0xFF</value>
+<description>User ID 1</description>
+</register>
+<register id='121'>
+<value>0xFF</value>
+<description>User ID 2</description>
+</register>
+<register id='122'>
+<value>0xFF</value>
+<description>User ID 3</description>
+</register>
+<register id='123'>
+<value>0xFF</value>
+<description>User ID 4</description>
+</register>
+<register id='124'>
+<value>89</value>
+<description>Manufacturer device id 0</description>
+</register>
+<register id='125'>
+<value>0xFF</value>
+<description>Manufacturer device id 1</description>
+</register>
+<register id='126'>
+<value>0xFF</value>
+<description>Manufacturer device id 2</description>
+</register>
+<register id='127'>
+<value>0xFF</value>
+<description>Manufacturer device id 3</description>
+</register>
+<register id='128'>
+<value>0xFF</value>
+<description>Manufacturer sub device id 0</description>
+</register>
+<register id='129'>
+<value>0xFF</value>
+<description>Manufacturer sub device id 1</description>
+</register>
+<register id='130'>
+<value>0xFF</value>
+<description>Manufacturer sub device id 2</description>
+</register>
+<register id='131'>
+<value>0xFF</value>
+<description>Manufacturer sub device id 3</description>
+</register>
+<register id='132'>
+<value>0x03</value>
+<description>Nickname id</description>
+</register>
+<register id='133'>
+<value>0x00</value>
+<description>Page select register MSB</description>
+</register>
+<register id='134'>
+<value>0x00</value>
+<description>Page select register LSB</description>
+</register>
+<register id='135'>
+<value>0x00</value>
+<description>Firmware major version number</description>
+</register>
+<register id='136'>
+<value>0x01</value>
+<description>Firmware minor version number</description>
+</register>
+<register id='137'>
+<value>0x06</value>
+<description>Firmware sub minor version number</description>
+</register>
+<register id='138'>
+<value>0x01</value>
+<description>Boot loader algorithm</description>
+</register>
+<register id='139'>
+<value>0x08</value>
+<description>Buffer Size</description>
+</register>
+<register id='140'>
+<value>0x01</value>
+<description>Number of register pages used.</description>
+</register>
+<register id='141'>
+<value>0xFF</value>
+<description>GUID Byte 15, LSB
+GUID=FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF</description>
+</register>
+<register id='142'>
+<value>0xFF</value>
+<description>GUID Byte 14</description>
+</register>
+<register id='143'>
+<value>0xFF</value>
+<description>GUID Byte 13</description>
+</register>
+<register id='144'>
+<value>0xFF</value>
+<description>GUID Byte 12</description>
+</register>
+<register id='145'>
+<value>0xFF</value>
+<description>GUID Byte 11</description>
+</register>
+<register id='146'>
+<value>0xFF</value>
+<description>GUID Byte 10</description>
+</register>
+<register id='147'>
+<value>0xFF</value>
+<description>GUID Byte 9</description>
+</register>
+<register id='148'>
+<value>0xFF</value>
+<description>GUID Byte 8</description>
+</register>
+<register id='149'>
+<value>0xFF</value>
+<description>GUID Byte 7</description>
+</register>
+<register id='150'>
+<value>0xFF</value>
+<description>GUID Byte 6</description>
+</register>
+<register id='151'>
+<value>0xFF</value>
+<description>GUID Byte 5</description>
+</register>
+<register id='152'>
+<value>0xFF</value>
+<description>GUID Byte 4</description>
+</register>
+<register id='153'>
+<value>0xFF</value>
+<description>GUID Byte 3</description>
+</register>
+<register id='154'>
+<value>0xFF</value>
+<description>GUID Byte 2</description>
+</register>
+<register id='155'>
+<value>0xFF</value>
+<description>GUID Byte 1</description>
+</register>
+<register id='156'>
+<value>0xFF</value>
+<description>GUID Byte 0, LSB</description>
+</register>
+<register id='157'>
+<value>0x31</value>
+<description>Module Description File URL, MSB
+http://192.168.1.250:8080/hasselto.xml</description>
+</register>
+<register id='158'>
+<value>0x39</value>
+<description>Module Description File URL</description>
+</register>
+<register id='159'>
+<value>0x32</value>
+<description>Module Description File URL</description>
+</register>
+<register id='160'>
+<value>0x2E</value>
+<description>Module Description File URL</description>
+</register>
+<register id='161'>
+<value>0x31</value>
+<description>Module Description File URL</description>
+</register>
+<register id='162'>
+<value>0x36</value>
+<description>Module Description File URL</description>
+</register>
+<register id='163'>
+<value>0x38</value>
+<description>Module Description File URL</description>
+</register>
+<register id='164'>
+<value>0x2E</value>
+<description>Module Description File URL</description>
+</register>
+<register id='165'>
+<value>0x31</value>
+<description>Module Description File URL</description>
+</register>
+<register id='166'>
+<value>0x2E</value>
+<description>Module Description File URL</description>
+</register>
+<register id='167'>
+<value>0x32</value>
+<description>Module Description File URL</description>
+</register>
+<register id='168'>
+<value>0x35</value>
+<description>Module Description File URL</description>
+</register>
+<register id='169'>
+<value>0x30</value>
+<description>Module Description File URL</description>
+</register>
+<register id='170'>
+<value>0x3A</value>
+<description>Module Description File URL</description>
+</register>
+<register id='171'>
+<value>0x38</value>
+<description>Module Description File URL</description>
+</register>
+<register id='172'>
+<value>0x30</value>
+<description>Module Description File URL</description>
+</register>
+<register id='173'>
+<value>0x38</value>
+<description>Module Description File URL</description>
+</register>
+<register id='174'>
+<value>0x30</value>
+<description>Module Description File URL</description>
+</register>
+<register id='175'>
+<value>0x2F</value>
+<description>Module Description File URL</description>
+</register>
+<register id='176'>
+<value>0x68</value>
+<description>Module Description File URL</description>
+</register>
+<register id='177'>
+<value>0x61</value>
+<description>Module Description File URL</description>
+</register>
+<register id='178'>
+<value>0x73</value>
+<description>Module Description File URL</description>
+</register>
+<register id='179'>
+<value>0x73</value>
+<description>Module Description File URL</description>
+</register>
+<register id='180'>
+<value>0x65</value>
+<description>Module Description File URL</description>
+</register>
+<register id='181'>
+<value>0x6C</value>
+<description>Module Description File URL</description>
+</register>
+<register id='182'>
+<value>0x74</value>
+<description>Module Description File URL</description>
+</register>
+<register id='183'>
+<value>0x6F</value>
+<description>Module Description File URL</description>
+</register>
+<register id='184'>
+<value>0x2E</value>
+<description>Module Description File URL</description>
+</register>
+<register id='185'>
+<value>0x78</value>
+<description>Module Description File URL</description>
+</register>
+<register id='186'>
+<value>0x6D</value>
+<description>Module Description File URL</description>
+</register>
+<register id='187'>
+<value>0x6C</value>
+<description>Module Description File URL</description>
+</register>
+<register id='188'>
+<value>0x00</value>
+<description>Module Description File URL, LSB</description>
+</register>
+<register id='189'>
+<value></value>
+<description></description>
+</register>
+<register id='190'>
+<value></value>
+<description></description>
+</register>
+<register id='191'>
+<value></value>
+<description></description>
+</register>
+<register id='192'>
+<value></value>
+<description></description>
+</register>
+<register id='193'>
+<value></value>
+<description></description>
+</register>
+<register id='194'>
+<value></value>
+<description></description>
+</register>
+<register id='195'>
+<value></value>
+<description></description>
+</register>
+<register id='196'>
+<value></value>
+<description></description>
+</register>
+<register id='197'>
+<value></value>
+<description></description>
+</register>
+<register id='198'>
+<value></value>
+<description></description>
+</register>
+<register id='199'>
+<value></value>
+<description></description>
+</register>
+<register id='200'>
+<value></value>
+<description></description>
+</register>
+<register id='201'>
+<value></value>
+<description></description>
+</register>
+<register id='202'>
+<value></value>
+<description></description>
+</register>
+<register id='203'>
+<value></value>
+<description></description>
+</register>
+<register id='204'>
+<value></value>
+<de
